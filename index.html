@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <title>Huiswerk Les 25</title>
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js">
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#fadein").click(function() {
+                    $("p").fadeIn();
+                });
+                $("#fadeout").click(function() {
+                    $("p").fadeOut();
+                });
+                $("#fadetoggle").click(function() {
+                    $("p").fadeToggle();
+                });
+                $("#omhoog").click(function() {
+                    $("p").slideUp();
+                });
+                $("#omlaag").click(function() {
+                    $("p").slideDown();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="fadeout">Verberg de afbeelding</button>
+        <button id="fadein">Toon de afbeelding</button>
+        <button id="fadetoggle">Verberg of toon afbeelding</button>
+        <br><br>
+        <button id="omhoog">Afbeelding weg</button>
+        <button id="omlaag">Afbeelding tonen</button>
+        <p><img src="afbeeldingen/zoetermeer.jpg" width="200" alt="Logo van Zoetermeer"></p>
+        <noscript>
+            Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+        </noscript>
+    </body>
+</html>
+
